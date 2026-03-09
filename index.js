@@ -6,7 +6,7 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: ['http://localhost:3000', 'https://lyaman-new-portfolio-app.vercel.app'] }));
 app.use(express.json());
 
 // Отдаём загруженные файлы статически
